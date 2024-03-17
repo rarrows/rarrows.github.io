@@ -6,13 +6,12 @@
     <title>Password Generator</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css?v=0.3" />
-    <script src="script.js?v=0.3" async defer></script>
+    <link rel="stylesheet" href="style.css?v=0.4" />
+    <script src="script.js?v=0.4" async defer></script>
   </head>
   <body>
     <div class="pw-container">
       <div class="pw-header">
-        <div class="pw" id="pw">error</div>
         <div class="pw-body">
           <div class="form-control">
             <label for="len">Length</label>
@@ -25,27 +24,29 @@
               value="20"
             />
           </div>
-          <div class="form-control">
+          <div class="form-control check">
             <label for="upper">Contains Uppercase</label>
-            <input id="upper" type="checkbox" class="check" checked />
+            <input id="upper" type="checkbox" checked />
           </div>
-          <div class="form-control">
+          <div class="form-control check">
             <label for="lower">Contains Lowercase</label>
-            <input id="lower" type="checkbox" class="check" checked />
+            <input id="lower" type="checkbox" checked />
           </div>
-          <div class="form-control">
+          <div class="form-control check">
             <label for="number">Contains Numbers</label>
-            <input id="number" type="checkbox" class="check" checked />
+            <input id="number" type="checkbox" checked />
           </div>
-          <div class="form-control">
+          <div class="form-control check">
             <label for="symbol">Contains Symbols</label>
-            <input id="symbol" type="checkbox" class="check" checked />
+            <input id="symbol" type="checkbox" checked />
           </div>
           <button class="generate" id="generate">Generate Password</button>
+          <div class="pw" id="pw">error</div>
         </div>
+
         <span id="copied" class="copied">copied to clipboard </span>
       </div>
     </div>
-    <small><p>v0.3</p></small>
+    <small><p>v0.4</p></small>
   </body>
 </html>

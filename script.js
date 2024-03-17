@@ -80,9 +80,9 @@ function generateX(){
 }
 
 generateEl.addEventListener('click', generatePassword);
+const textarea = document.createElement('textarea');
 
 function copyTextToClipboard(textToCopy) {
-  const textarea = document.createElement('textarea');
   textarea.value = textToCopy;
 
   document.body.appendChild(textarea);
