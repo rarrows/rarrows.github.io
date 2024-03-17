@@ -70,7 +70,12 @@ function generateX(){
 
   if (xs.length === 0) return "";
 
+  const copiedLabel = document.querySelector('.copied');
+  copiedLabel.style.display = 'block';
+  copiedLabel.style.opacity = '0';
+
   return xs[Math.floor(Math.random() * xs.length)];
+
 
 }
 
@@ -86,6 +91,9 @@ function copyTextToClipboard(textToCopy) {
   
   try {
       document.execCommand('copy');
+      const copiedLabel = document.querySelector('.copied');
+      copiedLabel.style.display = 'block';
+      copiedLabel.style.opacity = '1';
       return true
   } catch (err) {
       return false
